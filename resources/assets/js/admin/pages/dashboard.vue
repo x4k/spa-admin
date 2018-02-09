@@ -116,8 +116,8 @@
         created() {
             // TODO these settings should be sync with vuex
             this.logo_type = 'text';
-            this.title = 'Yet Another Laravel-SPA-Admin';
-            document.title = 'Yet Another Laravel-SPA-Admin-管理后台';
+            this.title = 'Okliang-OMS';
+            document.title = 'Okliang-OMS-管理后台';
         },
         components: {
             LeftMenu,

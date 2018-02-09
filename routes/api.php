@@ -40,3 +40,16 @@ Route::post('api/auth/user/modify',      ['uses' => 'Auth\UsersController@modify
 
 Route::post('api/auth/menus/save',       ['uses' => 'Auth\MenusController@save',        'meta' => ['description' => '更新系统菜单']])->name('api.auth.menus.save');
 Route::post('api/auth/menus/all',        ['uses' => 'Auth\MenusController@all',         'meta' => ['description' => '获取系统菜单']])->name('api.auth.menus.all');
+
+/**
+ * 订单管理
+ *
+ */
+Route::group(['prefix' => 'api/order'], function() {
+    Route::post('/list',
+        ['uses' => 'Order\ListController@index',
+            'meta' => ['description' => '订单详情']
+        ]);
+
+});
+

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Yet Another Laravel-SPA-Admin</title>
+        <title>Okliang-OMS</title>
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <style>
             @-webkit-keyframes scale {

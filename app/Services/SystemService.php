@@ -96,4 +96,13 @@ class SystemService
         });
         return $roles;
     }
+
+    public static function test()
+    {
+        session()->put([
+            'ok' =>'shi'
+        ]);
+        session()->save();
+        return true;
+    }
 }

@@ -20,6 +20,7 @@ export default {
         },
         example: async (params)=>{
             let mockdata = await http.post('api/auth/roles/example' , params);
+            console.log(mockdata);
             return Promise.resolve(mockdata);
         },
     },

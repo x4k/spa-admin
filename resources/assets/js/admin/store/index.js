@@ -7,8 +7,8 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
     state: {
         app:{
-            name:'Yet Another Laravel-SPA-Admin',
-            title:'Yet Another Laravel-SPA-Admin'
+            name:'Okliang-OMS',
+            title:'Okliang-OMS'
         },
         user   : {
             username: '',

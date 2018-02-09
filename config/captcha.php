@@ -43,7 +43,7 @@ return [
     ],
 
     'easy'   => [
-        'length'    => 3,
+        'length'    => 5,
         'width'     => 150,
         'height'    => 33,
         'quality'   => 90,

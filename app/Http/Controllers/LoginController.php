@@ -13,6 +13,7 @@ use App\Exceptions\CaptchaMismatchException;
 use App\Exceptions\UsernameOrPasswordMismatchException;
 use App\Services\AccountService;
 use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class LoginController extends Controller
 {
@@ -23,12 +24,11 @@ class LoginController extends Controller
      * @throws CaptchaMismatchException
      * @throws UsernameOrPasswordMismatchException
      */
-    public function login(Request $request){
-
+    public function login(Request $request)
+    {
         $this->validate($request, [
             'username' => 'required', 'password' => 'required', 'captcha'  => 'required'
         ]);
-
         if(!captcha_check($request->input('captcha'))){
             throw new CaptchaMisMatchException();
         }

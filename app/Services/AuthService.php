@@ -97,7 +97,9 @@ class AuthService
         foreach ($user_roles as $user_role) {
             $user_menus     += $user_role->menus;
             $user_apis      += $user_role->apis;
-            $user_routes    += $user_role->routes;
+            if (!empty($user_role->routes)) {
+                $user_routes  += $user_role->routes;
+            }
         }
 
         return [

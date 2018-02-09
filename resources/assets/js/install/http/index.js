@@ -5,7 +5,7 @@ import json_response_codes from './codes'
 
 // 创建axios实例
 const Axios = axios.create({
-    baseURL     : 'http://laravel-spa-admin.local',        // api的base_url
+    baseURL     : 'http://coolseven.okliang.com',        // api的base_url
     timeout     : 5000,                                           // 请求超时时间
     maxRedirects: 0
 });

@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `auth_roles` (
   `description` varchar(300) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '角色描述',
   `display_order` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '该角色的展示顺序',
   `routes` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '该角色拥有的前端路由地址集合',
-  `menus` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '该角色拥有的左侧菜单树的菜单树(json字符串)',
+  `menus` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '[{"name":"欢迎页","type":"route","path":"\/welcome","parent":"根菜单","selected":true}]' COMMENT '该角色拥有的左侧菜单树的菜单树(json字符串)',
   `apis` text COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '该角色拥有的接口地址集合',
   `is_disabled` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '该角色是否已禁用，0-未禁用 ， 1-已禁用',
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '角色创建时间',
