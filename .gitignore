@@ -1,5 +1,10 @@
 .idea
-public
+/public/storage
+/public/hot
+/public/css
+/public/js
+/public/*.txt
+public/mix-manifest.json
 storage
 node_modules
 vendor
