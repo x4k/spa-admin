@@ -9,7 +9,7 @@
 namespace App\Models;
 //
 //use Jenssegers\Mongodb\Eloquent\Model;
-use MongoModel;
+use Jenssegers\Mongodb\Eloquent\Model as MongoModel;
 
 class MongoUser extends MongoModel
 {
